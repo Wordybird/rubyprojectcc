@@ -9,7 +9,6 @@ class Pet
     @breed=options['breed']
     @days_in_captivity=options['days_in_captivity'].to_i
     @owner_id= nil || options['owner_id'].to_i
-    @is_adoptable = options['is_adoptable']
     @id=nil || options['id'].to_i
   end
 
