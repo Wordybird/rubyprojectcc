@@ -2,7 +2,7 @@ require_relative('../db/sql_runner')
 
 class Owner
 
-  attr_reader(:name, :url, :id)
+  attr_reader(:name, :id)
 
   def initialize(options)
     @name=options['name']
@@ -10,7 +10,7 @@ class Owner
   end
 
   def save()
-    sql="INSERT INTO owners (name) VALUES ('#{name}') RETURNING *"
+    sql="INSERT INTO owners (name) VALUES ('#{@name}') RETURNING *"
     names=SqlRunner.run(sql)
     @id = names.first()['id'].to_i
   end
