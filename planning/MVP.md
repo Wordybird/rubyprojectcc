@@ -5,7 +5,7 @@ Store id (primary key, SERIAL8), name (VARCHAR).
 Create database of owners.
 
 Pets:
-Store id (primary key, SERIAL8), name(VARCHAR), breed(VARCHAR), date of discovery (stored as an number for simplicity), days in care (also as a number) and owner_id as a foreign key.
+Store id (primary key, SERIAL8), name(VARCHAR), breed(VARCHAR), days in care (INT2) and owner_id as a foreign key.
 Create database of pets.
 Link pets with owners via owner_id and find owners by their id.
 Function to list pet as adoptable or not depending on how many days they have been cared for in the shelter.
