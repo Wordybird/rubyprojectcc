@@ -1,0 +1,12 @@
+<h1>Our Pets</h1>
+
+<!-- <p><a href="/pets/new">New Pet.</a></p> -->
+<hr />
+<% for pet in @pets %>
+<p>Name: <%= pet.name %></p>
+<p>Breed: <%= pet.breed %></p>
+<p>Days At The Shelter: <%= pet.days_in_captivity %></p>
+<!-- <p>ID: <%= pet.id %></p> -->
+<p><a href="pets/<%= pet.id %>">Show pet details.</a></p>
+<hr />
+<% end %>
