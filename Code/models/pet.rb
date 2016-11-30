@@ -45,10 +45,10 @@ class Pet
      if @days_in_captivity >30
        pet = "This pet is adoptable."
      else
-        pet = "This pet is not adoptable as it has not been with us for enough time."
-     end
-     return pet
+      pet = "This pet is not adoptable as it has not been with us for enough time."
     end
+    return pet
   end
+end
 
 end
