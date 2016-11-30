@@ -13,7 +13,7 @@ get '/pets' do
   erb(:show)
 end
 
-get 'pets/:id' do
+get '/pets/:id' do
   @pet=Pet.find(options[:id])
   erb(:show_pet)
 end
