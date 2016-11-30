@@ -4,9 +4,9 @@ class Owner
 
   attr_reader(:name, :id)
 
-  def initialize(options)
-    @name = options['name']
-    @id = nil || options['id'].to_i
+  def initialize(params)
+    @name = params['name']
+    @id = nil || params['id'].to_i
   end
 
   def save()

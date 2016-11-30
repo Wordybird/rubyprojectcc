@@ -5,12 +5,12 @@ class Pet
 
   attr_reader(:name, :breed, :days_in_captivity, :owner_id, :id)
 
-  def initialize(options)
-    @name = options['name']
-    @breed = options['breed']
-    @days_in_captivity = options['days_in_captivity'].to_i
-    @owner_id =  nil || options['owner_id'].to_i
-    @id = nil || options['id'].to_i
+  def initialize(params)
+    @name = params['name']
+    @breed = params['breed']
+    @days_in_captivity = params['days_in_captivity'].to_i
+    @owner_id =  nil || params['owner_id'].to_i
+    @id = nil || params['id'].to_i
   end
 
   def save()
@@ -27,7 +27,7 @@ class Pet
   end
 
   def self.find(id)
-    sql = "SELECT * FROM pets WHERE id  =  #{id}"
+    sql = "SELECT * FROM pets WHERE id = #{id}"
     pet = SqlRunner.run(sql)
     result = Pet.new(pet.first)
     return result

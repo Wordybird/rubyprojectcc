@@ -19,7 +19,7 @@ pet1=Pet.new({"name"=>"Jackie","breed"=>"Rabbit","days_in_captivity"=>45,"owner_
 pet1.save()
 pet2=Pet.new({"name"=>"Sophie","breed"=>"Dog","days_in_captivity"=>15,"owner_id"=>owner2.id})
 pet2.save()
-pet3=Pet.new({"name"=>"Not A Dalek","breed"=>"Cat","days_in_captivity"=>600,"owner_id"=>owner3.id})
+pet3=Pet.new({"name"=>"Not A Dalek","breed"=>"Cat, yes definitely cat","days_in_captivity"=>600,"owner_id"=>owner3.id})
 pet3.save()
 
 pets=Pet.all()
