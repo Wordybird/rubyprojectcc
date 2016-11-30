@@ -14,7 +14,6 @@ get '/pets' do
 end
 
 get '/pets/:id' do
-  puts options[:id]
-  @pet=Pet.find(options[:id])
+  @pet=Pet.find(params[:id])
   erb(:show_pet)
 end
