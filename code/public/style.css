@@ -1,23 +1,30 @@
 body {
-  background-color: oldlace;
+  background-image: url("dogfield.jpg");
 }
 
 h1 {
   font-family: Georgia;
-  color: darkblue;
+  color: white;
 }
 
 p {
   font-size: 1em;
-  color: darkblue;
+  color: white;
   font-family: Helvetica;
+  align: center;
 }
 
 a {
   font-size: 1em;
-  color: darkslategrey;
+  color: white;
 }
 
 a:hover {
-  color: black;
+  color: lightgrey;
+}
+
+div {
+  padding-left: 0.5%;
+  padding-top: 0.5%;
+  background: rgba(246, 243, 243, 0.25);
 }
