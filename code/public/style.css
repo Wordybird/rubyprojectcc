@@ -20,12 +20,12 @@ a {
 }
 
 a:hover {
-  color: lightgrey;
+  color: lightslategrey;
 }
 
 div {
   padding: 0.5%;
   padding-right: 10%;
   display:inline-block;
-  background: rgba(246, 243, 243, 0.3);
+  background: rgba(246, 243, 243, 0.5);
 }
