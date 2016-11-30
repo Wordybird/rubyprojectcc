@@ -5,6 +5,7 @@ body {
 h1 {
   font-family: Georgia;
   color: white;
+  text-shadow: 2px 2px 3px #000;
 }
 
 p {
@@ -12,11 +13,13 @@ p {
   color: white;
   font-family: Helvetica;
   align: center;
+  text-shadow: 2px 2px 3px #000;
 }
 
 a {
   font-size: 1em;
   color: white;
+  text-shadow: 2px 2px 3px #000;
 }
 
 a:hover {
