@@ -25,5 +25,7 @@ a:hover {
 
 div {
   padding: 0.5%;
+  padding-right: 10%;
+  display:inline-block;
   background: rgba(246, 243, 243, 0.3);
 }
